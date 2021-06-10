@@ -12,7 +12,7 @@ const CardDeckWrapper = styled.div`
     position: relative;
     @media (max-width: 1100px) {
         flex-direction:column;
-        padding: 40px 10px;
+        padding: 40px 10px 0px 10px;
         align-items: center;
     }
 `;
@@ -36,7 +36,7 @@ const Card = styled.li`
         align-self: center;
         align-items: center;
         width: 100%;
-        padding: 20px 0 30px 0;
+        padding: 20px 10px 30px 10px;
     }
 `;
 

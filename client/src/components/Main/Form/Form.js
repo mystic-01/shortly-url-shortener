@@ -24,7 +24,8 @@ const InputWrapper = styled.form`
     @media (max-width: 1100px) {
         flex-direction: column;
         justify-content: space-between;
-        padding: 25px 10px;
+        padding: 25px;
+        width: calc(100% - 30px);
     }
 `;
 
@@ -45,7 +46,7 @@ const FormInput = styled.input`
     }
     @media (max-width: 1100px) {
         margin: 0 0 20px 0;
-        width: 77%;
+        width: calc(100% - 4rem);
     }
 `;
 
@@ -77,14 +78,14 @@ const LinkText = styled.p`
         font-size: 0.9rem;
         flex-direction: column;
         justify-content: space-between;
-        margin: 10px;
+        margin: 10px 10px 0 10px;
     }
     `;
 const LinkTextShort = styled(LinkText)`
     color: ${props => props.theme.colors.primary.cyan};
     margin: 0 20px 0 0;
     @media (max-width: 1100px) {
-        margin: 10px 0;
+        margin: 10px 0; 
     }
     `;
 const ShortenedWrapper = styled.div`

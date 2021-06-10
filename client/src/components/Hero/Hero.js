@@ -7,8 +7,8 @@ import illustration from '../../images/illustration-working.svg';
 const HeroWrapper = styled.main`
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    padding: 20px 0 200px 150px;
+    align-items: flex-start;
+    padding: 60px 0 200px 150px;
     @media (max-width: 1100px) {
         flex-direction: column-reverse;
         padding: 30px 20px;
@@ -19,6 +19,7 @@ const HeroSection = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
+    width: 50%;
     overflow: hidden;
     @media (max-width: 1100px) {
         align-items: center;
@@ -27,10 +28,10 @@ const HeroSection = styled.div`
 `;
 
 const Heading = styled.h1`
-    color: ${props => props.theme.colors.primary.darkViolet};
+    color: ${props => props.theme.colors.neutral.darkestViolet};
     font-size: 5rem;
     font-weight: 700;
-    line-height: 1.2;
+    line-height: 1.1;
     @media (max-width: 1100px) {
         text-align: center;
         font-size: 2rem;
@@ -42,6 +43,7 @@ const Paragraph = styled.p`
     font-size: 1.25rem;
     font-weight: 500;
     line-height: 1.5;
+    width: 80%;
     @media (max-width: 1100px) {
         text-align: center;
         font-size: 0.9rem;

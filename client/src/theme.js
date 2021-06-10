@@ -1,5 +1,5 @@
 import { createGlobalStyle } from 'styled-components';
- 
+
 export const GlobalStyles = createGlobalStyle`
   * {
     margin: 0;
@@ -8,13 +8,24 @@ export const GlobalStyles = createGlobalStyle`
   }
   body {
       font-size: 18px;
+      scroll-behavior: smooth;
   }
   a, button {
       text-decoration: none;
       outline: none;
   }
+  ::-webkit-scrollbar {
+        width: 9px;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: transparent;
+    box-shadow: 0px 0px 0px 10000vh #fff;
+  }
+  ::-webkit-scrollbar-track {
+    background: linear-gradient(0deg, hsl(260, 8%, 14%) 0%, hsl(260, 8%, 14%) 100%);
+  }
 `;
- 
+
 export const theme = {
     colors: {
         primary: {
