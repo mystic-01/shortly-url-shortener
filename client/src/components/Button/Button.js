@@ -16,6 +16,7 @@ const ButtonWrapper = styled.button`
 
     &:hover {
         background: ${props => props.bg === "violet" ? props.theme.colors.primary.darkViolet : props.theme.colors.neutral.lightCyan};
+        transition: all 0.275s ease-in-out;
         cursor: pointer;
     }
     @media (max-width: 1100px) {

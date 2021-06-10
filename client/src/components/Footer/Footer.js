@@ -41,6 +41,7 @@ const FooterLink = styled.a`
     margin: 0 1.5rem 0.5rem 0;
     &:hover {
         color: ${props => props.theme.colors.primary.cyan};
+        transition: all 0.275s ease-in-out;
         cursor: pointer;
     }
     @media (max-width: 1100px) {

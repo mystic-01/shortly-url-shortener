@@ -42,6 +42,7 @@ const NavLink = styled.a`
     cursor: pointer;
     &:hover {
         color: ${props => props.theme.colors.primary.darkViolet};
+        transition: all 0.275s ease-in-out;
     }
 `;
 const NavBrand = styled.div`
@@ -56,6 +57,7 @@ const NavIcon = styled(NavBrand)`
     margin: 0;
     &:hover {
         color: ${props => props.theme.colors.primary.darkViolet};
+        transition: all 0.275s ease-in-out;
         cursor: pointer;
     }
 `;
